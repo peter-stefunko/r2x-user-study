@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 900" preserveAspectRatio="xMidYMid meet" style="--tint-dependency: #2F6FDB; --tint-dependent: #F28E2B; --tint-both: #8E44AD; --locked-fill: #E1E1E1; --locked-label: #000000">
+<style><![CDATA[
+text,
+line,
+rect.tint,
+foreignObject {
+  pointer-events: none;
+}
+
+rect[data-package] {
+  cursor: pointer;
+}
+
+rect.tint {
+  fill: transparent;
+}
+
+svg.locked rect.fill:not(.selected) {
+  fill: var(--locked-fill);
+}
+
+svg.locked text.label:not(.selected) {
+  fill: var(--locked-label);
+}
+
+rect.tint.hovered {
+  fill: #000000;
+  fill-opacity: 0.15;
+}
+
+rect.tint.dependency {
+  fill: var(--tint-dependency);
+  fill-opacity: 0.55;
+}
+
+rect.tint.dependent {
+  fill: var(--tint-dependent);
+  fill-opacity: 0.55;
+}
+
+rect.tint.both {
+  fill: var(--tint-both);
+  fill-opacity: 0.55;
+}
+
+rect.tint.hovered.dependency,
+rect.tint.hovered.dependent,
+rect.tint.hovered.both {
+  fill-opacity: 0.75;
+}
+
+rect.selected {
+  stroke-width: 4px;
+}
+
+#hover-name {
+  fill: #111111;
+}
+
+.panel {
+  pointer-events: auto;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #555555;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  color: #111111;
+  font: 13px monospace;
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px 4px 10px;
+  background: rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid #aaaaaa;
+  cursor: move;
+  user-select: none;
+}
+
+.panel.dragging {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.panel.collapsed .panel-header {
+  border-bottom: none;
+}
+
+.panel-title {
+  flex: 1;
+  overflow: hidden;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel button {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid #888888;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  font: inherit;
+}
+
+.panel-body {
+  max-height: 760px;
+  overflow: auto;
+  padding: 6px 10px 8px;
+}
+
+.panel.collapsed .panel-body {
+  display: none;
+}
+
+.panel table {
+  border-collapse: collapse;
+}
+
+.panel td {
+  padding: 1px 6px 1px 0;
+  vertical-align: top;
+  word-break: break-all;
+}
+
+.panel td:first-child {
+  color: #555555;
+  white-space: nowrap;
+  word-break: normal;
+}
+
+.panel table.signals td:first-child {
+  white-space: normal;
+  word-break: break-word;
+}
+
+.panel table.signals td:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.panel-section {
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.panel a {
+  color: #1a5fb4;
+}
+]]></style>
+<rect width="1900" height="900" fill="#FFFFFF"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-bash-de7073de209601c4" x="761.14" y="230.26" width="16.08" height="63.35" fill="#D48484"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-bash-de7073de209601c4" x="761.14" y="230.26" width="16.08" height="63.35" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6" x="761.14" y="168.54" width="16.08" height="61.73" fill="#D48787"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6" x="761.14" y="168.54" width="16.08" height="61.73" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-ca-certificates-mozilla-prebuilt-66c05ad272ca0667" x="458.71" y="42.00" width="146.66" height="61.64" fill="#8AB08B"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-ca-certificates-mozilla-prebuilt-66c05ad272ca0667" x="458.71" y="42.00" width="146.66" height="61.64" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-ca-certificates-mozilla-prebuilt-66c05ad272ca0667" x="460.21" y="43.50" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-coreutils-7a6f41dbec4445a6" x="458.71" y="103.64" width="304.04" height="64.89" fill="#BDCDBD"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-coreutils-7a6f41dbec4445a6" x="458.71" y="103.64" width="304.04" height="64.89" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-file-magic-e7f41832982aa5c4" x="1016.72" y="503.15" width="28.43" height="44.02" fill="#88AF8A"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-file-magic-e7f41832982aa5c4" x="1016.72" y="503.15" width="28.43" height="44.02" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-file-magic-e7f41832982aa5c4" x="1018.22" y="504.65" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">∅</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-filesystem-c23ee7cf90827045" x="458.71" y="667.21" width="927.16" height="105.58" fill="#8DB28F"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-filesystem-c23ee7cf90827045" x="458.71" y="667.21" width="927.16" height="105.58" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-filesystem-c23ee7cf90827045" x="460.21" y="668.71" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-glibc-1bd6b8989205feac" x="458.71" y="563.25" width="927.16" height="103.96" fill="#A6C0A7"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-glibc-1bd6b8989205feac" x="458.71" y="563.25" width="927.16" height="103.96" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libacl1-0418853ffe2f8ec9" x="528.85" y="168.54" width="16.08" height="394.72" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libacl1-0418853ffe2f8ec9" x="528.85" y="168.54" width="16.08" height="394.72" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libattr1-b3791a95121a8cfc" x="458.71" y="168.54" width="16.08" height="394.72" fill="#D58B8B"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libattr1-b3791a95121a8cfc" x="458.71" y="168.54" width="16.08" height="394.72" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libbz2-1-a9696bbf434f169d" x="1244.88" y="446.30" width="16.08" height="116.95" fill="#DAAFAF"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libbz2-1-a9696bbf434f169d" x="1244.88" y="446.30" width="16.08" height="116.95" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libcap2-1fef3e1772b8476f" x="590.10" y="168.54" width="29.24" height="394.72" fill="#92B593"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libcap2-1fef3e1772b8476f" x="590.10" y="168.54" width="29.24" height="394.72" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-libcap2-1fef3e1772b8476f" x="591.60" y="170.04" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">∅</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libcrypt1-93b259068d3c71f3" x="964.99" y="334.20" width="16.08" height="229.06" fill="#DDC6C6"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libcrypt1-93b259068d3c71f3" x="964.99" y="334.20" width="16.08" height="229.06" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libdw1-e6500c77c118b871" x="1069.43" y="103.64" width="191.53" height="342.66" fill="#C8D3C9"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libdw1-e6500c77c118b871" x="1069.43" y="103.64" width="191.53" height="342.66" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libelf1-95b6ec44a62a0a8e" x="1069.43" y="446.30" width="28.43" height="56.85" fill="#C2D0C3"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libelf1-95b6ec44a62a0a8e" x="1069.43" y="446.30" width="28.43" height="56.85" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libgcc-s1-c23c3bcbe0b910f0" x="771.46" y="493.41" width="34.92" height="69.85" fill="#92B593"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libgcc-s1-c23c3bcbe0b910f0" x="771.46" y="493.41" width="34.92" height="69.85" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-libgcc-s1-c23c3bcbe0b910f0" x="772.96" y="494.91" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libgcrypt20-d9f57efe5d9670ad" x="1280.32" y="103.64" width="62.21" height="230.55" fill="#99B99B"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libgcrypt20-d9f57efe5d9670ad" x="1280.32" y="103.64" width="62.21" height="230.55" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-libgcrypt20-d9f57efe5d9670ad" x="1281.82" y="105.14" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">∅</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libgmp10-3d23f62f85385705" x="624.70" y="168.54" width="29.24" height="394.72" fill="#8DB28F"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libgmp10-3d23f62f85385705" x="624.70" y="168.54" width="29.24" height="394.72" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-libgmp10-3d23f62f85385705" x="626.20" y="170.04" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">∅</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libgpg-error0-a73d98fc11b167bc" x="1314.11" y="334.20" width="28.43" height="229.06" fill="#8DB28F"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libgpg-error0-a73d98fc11b167bc" x="1314.11" y="334.20" width="28.43" height="229.06" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-libgpg-error0-a73d98fc11b167bc" x="1315.61" y="335.70" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">∅</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libjitterentropy3-77a79ef946215e47" x="1280.32" y="334.20" width="28.43" height="229.06" fill="#DBDDDB"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libjitterentropy3-77a79ef946215e47" x="1280.32" y="334.20" width="28.43" height="229.06" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-liblua5-3-5-29abd4d3f34b23e0" x="884.43" y="103.64" width="27.61" height="459.61" fill="#8DB28F"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-liblua5-3-5-29abd4d3f34b23e0" x="884.43" y="103.64" width="27.61" height="459.61" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-liblua5-3-5-29abd4d3f34b23e0" x="885.93" y="105.14" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-liblzma5-6edc8f01986494fe" x="1167.05" y="446.30" width="58.48" height="116.95" fill="#CED6CE"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-liblzma5-6edc8f01986494fe" x="1167.05" y="446.30" width="58.48" height="116.95" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libmagic1-12802d86eb793ec3" x="1034.02" y="103.64" width="27.61" height="399.51" fill="#99B99B"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libmagic1-12802d86eb793ec3" x="1034.02" y="103.64" width="27.61" height="399.51" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-libmagic1-12802d86eb793ec3" x="1035.52" y="105.14" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">∅</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libncurses6-a2dd73dbfba8a2fd" x="731.98" y="358.58" width="74.40" height="66.60" fill="#9FBCA0"/>
+<polygon points="783.07,358.58 806.38,358.58 806.38,381.89" fill="#E7298A" pointer-events="none"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libncurses6-a2dd73dbfba8a2fd" x="731.98" y="358.58" width="74.40" height="66.60" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-libncurses6-a2dd73dbfba8a2fd" x="733.48" y="360.08" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">∅</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libpcre2-8-0-74ccbea46d7757aa" x="554.69" y="363.19" width="30.05" height="200.06" fill="#B2C7B3"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libpcre2-8-0-74ccbea46d7757aa" x="554.69" y="363.19" width="30.05" height="200.06" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libpopt0-e83173765b8bf703" x="1369.79" y="103.64" width="16.08" height="459.61" fill="#D79E9E"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libpopt0-e83173765b8bf703" x="1369.79" y="103.64" width="16.08" height="459.61" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libreadline7-bb87ef5cca5b15d8" x="761.14" y="293.61" width="16.08" height="64.97" fill="#D69393"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libreadline7-bb87ef5cca5b15d8" x="761.14" y="293.61" width="16.08" height="64.97" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libselinux1-a2b465e774acecae" x="554.69" y="168.54" width="30.05" height="194.65" fill="#B7CAB8"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libselinux1-a2b465e774acecae" x="554.69" y="168.54" width="30.05" height="194.65" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libstdc--6-3ef20feb930c0b4a" x="771.46" y="425.18" width="34.92" height="68.22" fill="#94B696"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libstdc--6-3ef20feb930c0b4a" x="771.46" y="425.18" width="34.92" height="68.22" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-libstdc--6-3ef20feb930c0b4a" x="772.96" y="426.68" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libz1-074741f14a70e3f6" x="1050.51" y="503.15" width="30.05" height="60.10" fill="#AEC4AF"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libz1-074741f14a70e3f6" x="1050.51" y="503.15" width="30.05" height="60.10" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-libzstd1-e8859682aadc57d3" x="1103.22" y="446.30" width="58.48" height="116.95" fill="#D4DAD5"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-libzstd1-e8859682aadc57d3" x="1103.22" y="446.30" width="58.48" height="116.95" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-perl-base-f36443de2ede5fde" x="917.40" y="103.64" width="111.26" height="230.55" fill="#A2BEA3"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-perl-base-f36443de2ede5fde" x="917.40" y="103.64" width="111.26" height="230.55" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<rect class="fill" data-package="SPDXRef-Package-rpm-rpm-config-SUSE-216c8934a79ab555" x="800.27" y="103.64" width="27.61" height="56.85" fill="#99B99B"/>
+<polygon points="818.22,103.64 827.89,103.64 827.89,113.31" fill="#7B3FBF" pointer-events="none"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-rpm-config-SUSE-216c8934a79ab555" x="800.27" y="103.64" width="27.61" height="56.85" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-rpm-config-SUSE-216c8934a79ab555" x="801.77" y="105.14" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-rpm-ndb-938c87195cd1de13" x="730.28" y="42.00" width="536.03" height="53.60" fill="#AAC2AB"/>
+<polygon points="1247.56,42.00 1266.32,42.00 1266.32,60.76" fill="#7B3FBF" pointer-events="none"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-rpm-ndb-938c87195cd1de13" x="730.28" y="42.00" width="536.03" height="53.60" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-rpm-ndb-938c87195cd1de13" x="731.78" y="43.50" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-sles-release-198f69eb6e419d1e" x="768.11" y="119.72" width="26.80" height="40.77" fill="#8AB08B"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-sles-release-198f69eb6e419d1e" x="768.11" y="119.72" width="26.80" height="40.77" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-sles-release-198f69eb6e419d1e" x="769.61" y="121.22" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-system-user-root-b3d183699d21482c" x="458.71" y="772.79" width="927.16" height="107.21" fill="#88AF8A"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-system-user-root-b3d183699d21482c" x="458.71" y="772.79" width="927.16" height="107.21" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-system-user-root-b3d183699d21482c" x="460.21" y="774.29" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-terminfo-base-c83cdc8fd1457bee" x="731.98" y="425.18" width="34.11" height="68.22" fill="#8DB28F"/>
+<polygon points="754.16,425.18 766.10,425.18 766.10,437.12" fill="#E7298A" pointer-events="none"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-terminfo-base-c83cdc8fd1457bee" x="731.98" y="425.18" width="34.11" height="68.22" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-terminfo-base-c83cdc8fd1457bee" x="733.48" y="426.68" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">∅</text>
+<rect class="fill" data-package="SPDXRef-Package-rpm-skelcd-EULA-bci-13a6425c62cd4c80" x="1414.49" y="826.40" width="26.80" height="53.60" fill="#88AF8A"/>
+<rect class="tint" data-package="SPDXRef-Package-rpm-skelcd-EULA-bci-13a6425c62cd4c80" x="1414.49" y="826.40" width="26.80" height="53.60" stroke="#000000" stroke-width="1.5" stroke-dasharray="2.25 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-rpm-skelcd-EULA-bci-13a6425c62cd4c80" x="1415.99" y="827.90" font-family="monospace" font-weight="bold" font-size="15.00" fill="#000000" text-anchor="start" dominant-baseline="hanging">?</text>
+<polygon points="768.11,160.50 827.89,160.50 819.85,168.54 768.11,168.54" fill="#000000" pointer-events="none"/>
+<polygon points="618.77,95.60 1377.83,95.60 1385.87,103.64 610.73,103.64" fill="#000000" pointer-events="none"/>
+<text x="1880.00" y="4.00" font-family="monospace" font-size="13.0" fill="#111111" text-anchor="end" dominant-baseline="hanging"><tspan font-weight="bold">?</tspan> not on Anitya</text>
+<text x="1880.00" y="19.60" font-family="monospace" font-size="13.0" fill="#111111" text-anchor="end" dominant-baseline="hanging"><tspan font-weight="bold">∅</tspan> no upstream repository</text>
+<text id="hover-name" x="950.00" y="4.00" font-family="monospace" font-size="18.0" text-anchor="middle" dominant-baseline="hanging"></text>
+<foreignObject id="stats-panel" x="20" y="20" width="560.0" height="860"><div xmlns="http://www.w3.org/1999/xhtml" class="panel" hidden="hidden"></div></foreignObject>
+<script type="application/json" id="dependencies"><![CDATA[{"SPDXRef-Package-rpm-bash-de7073de209601c4": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libreadline7-bb87ef5cca5b15d8"], "SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6": ["SPDXRef-Package-rpm-bash-de7073de209601c4"], "SPDXRef-Package-rpm-ca-certificates-mozilla-prebuilt-66c05ad272ca0667": ["SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6", "SPDXRef-Package-rpm-coreutils-7a6f41dbec4445a6"], "SPDXRef-Package-rpm-coreutils-7a6f41dbec4445a6": ["SPDXRef-Package-rpm-libacl1-0418853ffe2f8ec9", "SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libcap2-1fef3e1772b8476f", "SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6", "SPDXRef-Package-rpm-libgmp10-3d23f62f85385705", "SPDXRef-Package-rpm-libselinux1-a2b465e774acecae", "SPDXRef-Package-rpm-libattr1-b3791a95121a8cfc"], "SPDXRef-Package-rpm-file-magic-e7f41832982aa5c4": [], "SPDXRef-Package-rpm-filesystem-c23ee7cf90827045": ["SPDXRef-Package-rpm-system-user-root-b3d183699d21482c"], "SPDXRef-Package-rpm-glibc-1bd6b8989205feac": ["SPDXRef-Package-rpm-filesystem-c23ee7cf90827045"], "SPDXRef-Package-rpm-libacl1-0418853ffe2f8ec9": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libattr1-b3791a95121a8cfc": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libbz2-1-a9696bbf434f169d": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libcap2-1fef3e1772b8476f": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libcrypt1-93b259068d3c71f3": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libdw1-e6500c77c118b871": ["SPDXRef-Package-rpm-libz1-074741f14a70e3f6", "SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-liblzma5-6edc8f01986494fe", "SPDXRef-Package-rpm-libelf1-95b6ec44a62a0a8e", "SPDXRef-Package-rpm-libbz2-1-a9696bbf434f169d", "SPDXRef-Package-rpm-libzstd1-e8859682aadc57d3"], "SPDXRef-Package-rpm-libelf1-95b6ec44a62a0a8e": ["SPDXRef-Package-rpm-libz1-074741f14a70e3f6", "SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libgcc-s1-c23c3bcbe0b910f0": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libgcrypt20-d9f57efe5d9670ad": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libjitterentropy3-77a79ef946215e47", "SPDXRef-Package-rpm-libgpg-error0-a73d98fc11b167bc"], "SPDXRef-Package-rpm-libgmp10-3d23f62f85385705": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libgpg-error0-a73d98fc11b167bc": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libjitterentropy3-77a79ef946215e47": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-liblua5-3-5-29abd4d3f34b23e0": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-liblzma5-6edc8f01986494fe": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libmagic1-12802d86eb793ec3": ["SPDXRef-Package-rpm-libz1-074741f14a70e3f6", "SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-file-magic-e7f41832982aa5c4"], "SPDXRef-Package-rpm-libncurses6-a2dd73dbfba8a2fd": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libstdc--6-3ef20feb930c0b4a", "SPDXRef-Package-rpm-libgcc-s1-c23c3bcbe0b910f0", "SPDXRef-Package-rpm-terminfo-base-c83cdc8fd1457bee"], "SPDXRef-Package-rpm-libpcre2-8-0-74ccbea46d7757aa": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libpopt0-e83173765b8bf703": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libreadline7-bb87ef5cca5b15d8": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libncurses6-a2dd73dbfba8a2fd"], "SPDXRef-Package-rpm-libselinux1-a2b465e774acecae": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libpcre2-8-0-74ccbea46d7757aa"], "SPDXRef-Package-rpm-libstdc--6-3ef20feb930c0b4a": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libgcc-s1-c23c3bcbe0b910f0"], "SPDXRef-Package-rpm-libz1-074741f14a70e3f6": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-libzstd1-e8859682aadc57d3": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac"], "SPDXRef-Package-rpm-perl-base-f36443de2ede5fde": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libcrypt1-93b259068d3c71f3"], "SPDXRef-Package-rpm-rpm-config-SUSE-216c8934a79ab555": ["SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6", "SPDXRef-Package-rpm-rpm-ndb-938c87195cd1de13", "SPDXRef-Package-rpm-bash-de7073de209601c4"], "SPDXRef-Package-rpm-rpm-ndb-938c87195cd1de13": ["SPDXRef-Package-rpm-libacl1-0418853ffe2f8ec9", "SPDXRef-Package-rpm-libz1-074741f14a70e3f6", "SPDXRef-Package-rpm-libmagic1-12802d86eb793ec3", "SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-libcap2-1fef3e1772b8476f", "SPDXRef-Package-rpm-rpm-config-SUSE-216c8934a79ab555", "SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6", "SPDXRef-Package-rpm-liblua5-3-5-29abd4d3f34b23e0", "SPDXRef-Package-rpm-liblzma5-6edc8f01986494fe", "SPDXRef-Package-rpm-coreutils-7a6f41dbec4445a6", "SPDXRef-Package-rpm-libelf1-95b6ec44a62a0a8e", "SPDXRef-Package-rpm-libselinux1-a2b465e774acecae", "SPDXRef-Package-rpm-libbz2-1-a9696bbf434f169d", "SPDXRef-Package-rpm-libgcrypt20-d9f57efe5d9670ad", "SPDXRef-Package-rpm-bash-de7073de209601c4", "SPDXRef-Package-rpm-libdw1-e6500c77c118b871", "SPDXRef-Package-rpm-libpopt0-e83173765b8bf703", "SPDXRef-Package-rpm-libzstd1-e8859682aadc57d3", "SPDXRef-Package-rpm-perl-base-f36443de2ede5fde"], "SPDXRef-Package-rpm-sles-release-198f69eb6e419d1e": ["SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6"], "SPDXRef-Package-rpm-system-user-root-b3d183699d21482c": [], "SPDXRef-Package-rpm-terminfo-base-c83cdc8fd1457bee": ["SPDXRef-Package-rpm-libncurses6-a2dd73dbfba8a2fd"], "SPDXRef-Package-rpm-skelcd-EULA-bci-13a6425c62cd4c80": []}]]></script>
+<script type="application/json" id="stats"><![CDATA[{"SPDXRef-Package-rpm-bash-de7073de209601c4": {"name": "bash", "version": "4.4-150400.27.6.1", "id": "SPDXRef-Package-rpm-bash-de7073de209601c4", "purl": "pkg:rpm/sles/bash@4.4-150400.27.6.1?arch=x86_64&distro=sles-15.7&upstream=bash-4.4-150400.27.6.1.src.rpm", "license": "GPL-3.0-or-later", "dependencies": 2, "dependents": 3, "repo_url": "https://git.savannah.gnu.org/git/bash.git", "anitya_url": "https://release-monitoring.org/project/166/", "score": 0.4812627216187972, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 362.67148426362195], ["months_since_last_commit", 1.0, 2.035005824196897], ["contributor_count(window_months=12)", 1.0, 1.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 1.30321697467488], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 3.0]]}, "SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6": {"name": "bash-sh", "version": "4.4-150400.27.6.1", "id": "SPDXRef-Package-rpm-bash-sh-26eb912aa9d283b6", "purl": "pkg:rpm/sles/bash-sh@4.4-150400.27.6.1?arch=x86_64&distro=sles-15.7&upstream=bash-4.4-150400.27.6.1.src.rpm", "license": "GPL-3.0-or-later", "dependencies": 1, "dependents": 5, "repo_url": "https://git.savannah.gnu.org/git/bash.git", "anitya_url": "https://release-monitoring.org/project/166/", "score": 0.4787457876041186, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 362.67148426362195], ["months_since_last_commit", 1.0, 2.035005824196897], ["contributor_count(window_months=12)", 1.0, 1.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 1.30321697467488], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 5.0]]}, "SPDXRef-Package-rpm-ca-certificates-mozilla-prebuilt-66c05ad272ca0667": {"name": "ca-certificates-mozilla-prebuilt", "version": "2.92-150200.50.3", "id": "SPDXRef-Package-rpm-ca-certificates-mozilla-prebuilt-66c05ad272ca0667", "purl": "pkg:rpm/sles/ca-certificates-mozilla-prebuilt@2.92-150200.50.3?arch=noarch&distro=sles-15.7&upstream=ca-certificates-mozilla-prebuilt-2.92-150200.50.3.src.rpm", "license": "MPL-2.0", "dependencies": 2, "dependents": 0, "repo_url": null, "anitya_url": null, "score": 0.08836109854832123, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 0.0]]}, "SPDXRef-Package-rpm-coreutils-7a6f41dbec4445a6": {"name": "coreutils", "version": "8.32-150400.9.12.1", "id": "SPDXRef-Package-rpm-coreutils-7a6f41dbec4445a6", "purl": "pkg:rpm/sles/coreutils@8.32-150400.9.12.1?arch=x86_64&distro=sles-15.7&upstream=coreutils-8.32-150400.9.12.1.src.rpm", "license": "GPL-3.0-or-later", "dependencies": 7, "dependents": 2, "repo_url": "https://git.savannah.gnu.org/git/coreutils.git", "anitya_url": "https://release-monitoring.org/project/343/", "score": 0.30908436163007363, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 408.49990640372613], ["months_since_last_commit", 1.0, 0.029874842390676098], ["contributor_count(window_months=12)", 1.0, 36.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 88.61875427789185], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 7.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-file-magic-e7f41832982aa5c4": {"name": "file-magic", "version": "5.32-7.14.1", "id": "SPDXRef-Package-rpm-file-magic-e7f41832982aa5c4", "purl": "pkg:rpm/sles/file-magic@5.32-7.14.1?arch=noarch&distro=sles-15.7&upstream=file-5.32-7.14.1.src.rpm", "license": "BSD-2-Clause", "dependencies": 0, "dependents": 1, "repo_url": null, "anitya_url": "https://release-monitoring.org/project/807/", "score": 0.04069010122051666, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 0.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-filesystem-c23ee7cf90827045": {"name": "filesystem", "version": "15.0-11.8.1", "id": "SPDXRef-Package-rpm-filesystem-c23ee7cf90827045", "purl": "pkg:rpm/sles/filesystem@15.0-11.8.1?arch=x86_64&distro=sles-15.7&upstream=filesystem-15.0-11.8.1.src.rpm", "license": "MIT", "dependencies": 1, "dependents": 1, "repo_url": null, "anitya_url": null, "score": 0.09643974735291225, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-glibc-1bd6b8989205feac": {"name": "glibc", "version": "2.38-150600.14.61.1", "id": "SPDXRef-Package-rpm-glibc-1bd6b8989205feac", "purl": "pkg:rpm/sles/glibc@2.38-150600.14.61.1?arch=x86_64&distro=sles-15.7&upstream=glibc-2.38-150600.14.61.1.src.rpm", "license": "GPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-2.1-or-later WITH GCC-exception-2.0", "dependencies": 1, "dependents": 28, "repo_url": "https://sourceware.org/git/glibc.git", "anitya_url": "https://release-monitoring.org/project/5401/", "score": 0.22397599254531636, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 9.0], ["months_since_first_commit", 1.0, 451.0094637043825], ["months_since_last_commit", 1.0, 0.0640785039869952], ["contributor_count(window_months=12)", 1.0, 133.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 84.24914442162901], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 28.0]]}, "SPDXRef-Package-rpm-libacl1-0418853ffe2f8ec9": {"name": "libacl1", "version": "2.4.0-150000.4.6.1", "id": "SPDXRef-Package-rpm-libacl1-0418853ffe2f8ec9", "purl": "pkg:rpm/sles/libacl1@2.4.0-150000.4.6.1?arch=x86_64&distro=sles-15.7&upstream=acl-2.4.0-150000.4.6.1.src.rpm", "license": "LicenseRef-GPL-2.0--and-LGPL-2.1-", "dependencies": 1, "dependents": 2, "repo_url": "https://git.savannah.nongnu.org/git/acl.git", "anitya_url": "https://release-monitoring.org/project/16/", "score": 0.43503961216919923, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 310.01700205006006], ["months_since_last_commit", 1.0, 1.4699022706091718], ["contributor_count(window_months=12)", 1.0, 3.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 3.6030116358658453], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-libattr1-b3791a95121a8cfc": {"name": "libattr1", "version": "2.6.0-150000.4.3.1", "id": "SPDXRef-Package-rpm-libattr1-b3791a95121a8cfc", "purl": "pkg:rpm/sles/libattr1@2.6.0-150000.4.3.1?arch=x86_64&distro=sles-15.7&upstream=attr-2.6.0-150000.4.3.1.src.rpm", "license": "GPL-2.0-or-later AND LGPL-2.1-or-later", "dependencies": 1, "dependents": 1, "repo_url": "https://git.savannah.nongnu.org/git/attr.git", "anitya_url": "https://release-monitoring.org/project/137/", "score": 0.47435105336388395, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 310.0274036643292], ["months_since_last_commit", 1.0, 4.621775099419348], ["contributor_count(window_months=12)", 1.0, 1.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 1.839835728952772], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libbz2-1-a9696bbf434f169d": {"name": "libbz2-1", "version": "1.0.8-150400.3.4.1", "id": "SPDXRef-Package-rpm-libbz2-1-a9696bbf434f169d", "purl": "pkg:rpm/sles/libbz2-1@1.0.8-150400.3.4.1?arch=x86_64&distro=sles-15.7&upstream=bzip2-1.0.8-150400.3.4.1.src.rpm", "license": "BSD-3-Clause", "dependencies": 1, "dependents": 2, "repo_url": "https://sourceware.org/git/bzip2.git", "anitya_url": "https://release-monitoring.org/project/237/", "score": 0.44397198027533413, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 351.30140234512663], ["months_since_last_commit", 1.0, 4.201345306568561], ["contributor_count(window_months=12)", 1.0, 3.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 0.7665982203969883], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-libcap2-1fef3e1772b8476f": {"name": "libcap2", "version": "2.63-150400.3.6.1", "id": "SPDXRef-Package-rpm-libcap2-1fef3e1772b8476f", "purl": "pkg:rpm/sles/libcap2@2.63-150400.3.6.1?arch=x86_64&distro=sles-15.7&upstream=libcap-2.63-150400.3.6.1.src.rpm", "license": "BSD-3-Clause OR GPL-2.0-only", "dependencies": 1, "dependents": 2, "repo_url": null, "anitya_url": "https://release-monitoring.org/project/1569/", "score": 0.12024193071746264, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-libcrypt1-93b259068d3c71f3": {"name": "libcrypt1", "version": "4.4.15-150300.4.7.1", "id": "SPDXRef-Package-rpm-libcrypt1-93b259068d3c71f3", "purl": "pkg:rpm/sles/libcrypt1@4.4.15-150300.4.7.1?arch=x86_64&distro=sles-15.7&upstream=libxcrypt-4.4.15-150300.4.7.1.src.rpm", "license": "LicenseRef-LGPL-2.1-or-later-AND-BSD-2-Clause-AND-BSD-3-Clause-AND-SUSE-Public-Domain", "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/besser82/libxcrypt", "anitya_url": "https://release-monitoring.org/project/16436/", "score": 0.4432396425903066, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, 138.1792299677679], ["months_since_last_commit", 1.0, 11.204434926319871], ["contributor_count(window_months=12)", 1.0, 2.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 0.15331964407939766], ["months_since_last_release", 1.0, 12.183980408990799], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libdw1-e6500c77c118b871": {"name": "libdw1", "version": "0.185-150400.5.8.3", "id": "SPDXRef-Package-rpm-libdw1-e6500c77c118b871", "purl": "pkg:rpm/sles/libdw1@0.185-150400.5.8.3?arch=x86_64&distro=sles-15.7&upstream=elfutils-0.185-150400.5.8.3.src.rpm", "license": "GPL-2.0-or-later OR LGPL-3.0-or-later", "dependencies": 6, "dependents": 1, "repo_url": "https://sourceware.org/git/elfutils.git", "anitya_url": "https://release-monitoring.org/project/5679/", "score": 0.3341316812520172, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 255.71646072158035], ["months_since_last_commit", 1.0, 0.1170854839196897], ["contributor_count(window_months=12)", 1.0, 34.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 18.475017111567418], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 6.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libelf1-95b6ec44a62a0a8e": {"name": "libelf1", "version": "0.185-150400.5.8.3", "id": "SPDXRef-Package-rpm-libelf1-95b6ec44a62a0a8e", "purl": "pkg:rpm/sles/libelf1@0.185-150400.5.8.3?arch=x86_64&distro=sles-15.7&upstream=elfutils-0.185-150400.5.8.3.src.rpm", "license": "GPL-2.0-or-later OR LGPL-3.0-or-later", "dependencies": 2, "dependents": 2, "repo_url": "https://sourceware.org/git/elfutils.git", "anitya_url": "https://release-monitoring.org/project/5679/", "score": 0.32146146366348033, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 255.71646072158035], ["months_since_last_commit", 1.0, 0.1170854839196897], ["contributor_count(window_months=12)", 1.0, 34.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 18.475017111567418], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-libgcc-s1-c23c3bcbe0b910f0": {"name": "libgcc_s1", "version": "16.2.0+git9497-150000.1.3.3", "id": "SPDXRef-Package-rpm-libgcc-s1-c23c3bcbe0b910f0", "purl": "pkg:rpm/sles/libgcc_s1@16.2.0%2Bgit9497-150000.1.3.3?arch=x86_64&distro=sles-15.7&upstream=gcc16-16.2.0%2Bgit9497-150000.1.3.3.src.rpm", "license": "GPL-3.0-or-later WITH GCC-exception-3.1", "dependencies": 1, "dependents": 2, "repo_url": null, "anitya_url": null, "score": 0.12024193071746264, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-libgcrypt20-d9f57efe5d9670ad": {"name": "libgcrypt20", "version": "1.11.0-150700.5.10.1", "id": "SPDXRef-Package-rpm-libgcrypt20-d9f57efe5d9670ad", "purl": "pkg:rpm/sles/libgcrypt20@1.11.0-150700.5.10.1?arch=x86_64&distro=sles-15.7&upstream=libgcrypt-1.11.0-150700.5.10.1.src.rpm", "license": "GPL-2.0-or-later AND LGPL-2.1-or-later", "dependencies": 3, "dependents": 1, "repo_url": null, "anitya_url": "https://release-monitoring.org/project/1623/", "score": 0.15218939348530783, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 3.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libgmp10-3d23f62f85385705": {"name": "libgmp10", "version": "6.1.2-4.9.1", "id": "SPDXRef-Package-rpm-libgmp10-3d23f62f85385705", "purl": "pkg:rpm/sles/libgmp10@6.1.2-4.9.1?arch=x86_64&distro=sles-15.7&upstream=gmp-6.1.2-4.9.1.src.rpm", "license": "LGPL-3.0-or-later OR GPL-2.0-or-later", "dependencies": 1, "dependents": 1, "repo_url": null, "anitya_url": "https://release-monitoring.org/project/1186/", "score": 0.09643974735291225, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libgpg-error0-a73d98fc11b167bc": {"name": "libgpg-error0", "version": "1.50-150700.1.8", "id": "SPDXRef-Package-rpm-libgpg-error0-a73d98fc11b167bc", "purl": "pkg:rpm/sles/libgpg-error0@1.50-150700.1.8?arch=x86_64&distro=sles-15.7&upstream=libgpg-error-1.50-150700.1.8.src.rpm", "license": "GPL-2.0-or-later AND LGPL-2.1-or-later", "dependencies": 1, "dependents": 1, "repo_url": null, "anitya_url": "https://release-monitoring.org/project/1628/", "score": 0.09643974735291225, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libjitterentropy3-77a79ef946215e47": {"name": "libjitterentropy3", "version": "3.4.1-150000.1.12.1", "id": "SPDXRef-Package-rpm-libjitterentropy3-77a79ef946215e47", "purl": "pkg:rpm/sles/libjitterentropy3@3.4.1-150000.1.12.1?arch=x86_64&distro=sles-15.7&upstream=jitterentropy-3.4.1-150000.1.12.1.src.rpm", "license": "BSD-3-Clause OR GPL-2.0-or-later", "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/smuellerDD/jitterentropy-library", "anitya_url": "https://release-monitoring.org/project/29701/", "score": 0.3769048745533892, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 113.95881562179558], ["months_since_last_commit", 1.0, 0.4607853533340939], ["contributor_count(window_months=12)", 1.0, 3.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 36.10677618069815], ["months_since_last_release", 1.0, 6.441015914190813], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-liblua5-3-5-29abd4d3f34b23e0": {"name": "liblua5_3-5", "version": "5.3.6-3.6.1", "id": "SPDXRef-Package-rpm-liblua5-3-5-29abd4d3f34b23e0", "purl": "pkg:rpm/sles/liblua5_3-5@5.3.6-3.6.1?arch=x86_64&distro=sles-15.7&upstream=lua53-5.3.6-3.6.1.src.rpm", "license": "MIT", "dependencies": 1, "dependents": 1, "repo_url": null, "anitya_url": null, "score": 0.09643974735291225, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-liblzma5-6edc8f01986494fe": {"name": "liblzma5", "version": "5.4.1-150600.3.6.1", "id": "SPDXRef-Package-rpm-liblzma5-6edc8f01986494fe", "purl": "pkg:rpm/sles/liblzma5@5.4.1-150600.3.6.1?arch=x86_64&distro=sles-15.7&upstream=xz-5.4.1-150600.3.6.1.src.rpm", "license": "LicenseRef-SUSE-Public-Domain", "dependencies": 1, "dependents": 2, "repo_url": "https://github.com/tukaani-project/xz", "anitya_url": "https://release-monitoring.org/project/5277/", "score": 0.3540323994807588, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 227.27337311303864], ["months_since_last_commit", 1.0, 0.25691406672332495], ["contributor_count(window_months=12)", 1.0, 12.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 14.795345653661874], ["months_since_last_release", 1.0, 2.2332398056426346], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-libmagic1-12802d86eb793ec3": {"name": "libmagic1", "version": "5.32-7.14.1", "id": "SPDXRef-Package-rpm-libmagic1-12802d86eb793ec3", "purl": "pkg:rpm/sles/libmagic1@5.32-7.14.1?arch=x86_64&distro=sles-15.7&upstream=file-5.32-7.14.1.src.rpm", "license": "BSD-2-Clause", "dependencies": 3, "dependents": 1, "repo_url": null, "anitya_url": "https://release-monitoring.org/project/807/", "score": 0.15218939348530783, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 3.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libncurses6-a2dd73dbfba8a2fd": {"name": "libncurses6", "version": "6.1-150000.5.33.1", "id": "SPDXRef-Package-rpm-libncurses6-a2dd73dbfba8a2fd", "purl": "pkg:rpm/sles/libncurses6@6.1-150000.5.33.1?arch=x86_64&distro=sles-15.7&upstream=ncurses-6.1-150000.5.33.1.src.rpm", "license": "MIT", "dependencies": 4, "dependents": 2, "repo_url": null, "anitya_url": "https://release-monitoring.org/project/373226/", "score": 0.19393895421990492, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 4.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-libpcre2-8-0-74ccbea46d7757aa": {"name": "libpcre2-8-0", "version": "10.42-150600.3.3.1", "id": "SPDXRef-Package-rpm-libpcre2-8-0-74ccbea46d7757aa", "purl": "pkg:rpm/sles/libpcre2-8-0@10.42-150600.3.3.1?arch=x86_64&distro=sles-15.7&upstream=pcre2-10.42-150600.3.3.1.src.rpm", "license": "BSD-3-Clause", "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/PCRE2Project/pcre2", "anitya_url": "https://release-monitoring.org/project/5832/", "score": 0.2905236595678911, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 152.9077332006449], ["months_since_last_commit", 1.0, 0.028570526677313864], ["contributor_count(window_months=12)", 1.0, 31.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 19.394934976043803], ["months_since_last_release", 1.0, 1.611494194085482], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libpopt0-e83173765b8bf703": {"name": "libpopt0", "version": "1.16-3.22", "id": "SPDXRef-Package-rpm-libpopt0-e83173765b8bf703", "purl": "pkg:rpm/sles/libpopt0@1.16-3.22?arch=x86_64&distro=sles-15.7&upstream=popt-1.16-3.22.src.rpm", "license": "MIT", "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/rpm-software-management/popt", "anitya_url": "https://release-monitoring.org/project/3689/", "score": 0.4687930502669944, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 357.96508797566923], ["months_since_last_commit", 1.0, 0.1563614565423226], ["contributor_count(window_months=12)", 1.0, 5.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 0.7665982203969883], ["months_since_last_release", 1.0, 50.013405413289604], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libreadline7-bb87ef5cca5b15d8": {"name": "libreadline7", "version": "7.0-150400.27.6.1", "id": "SPDXRef-Package-rpm-libreadline7-bb87ef5cca5b15d8", "purl": "pkg:rpm/sles/libreadline7@7.0-150400.27.6.1?arch=x86_64&distro=sles-15.7&upstream=bash-4.4-150400.27.6.1.src.rpm", "license": "GPL-3.0-or-later", "dependencies": 2, "dependents": 1, "repo_url": "https://git.savannah.gnu.org/git/bash.git", "anitya_url": "https://release-monitoring.org/project/166/", "score": 0.46963697841293534, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 362.67148426362195], ["months_since_last_commit", 1.0, 2.035005824196897], ["contributor_count(window_months=12)", 1.0, 1.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 1.30321697467488], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libselinux1-a2b465e774acecae": {"name": "libselinux1", "version": "3.5-150600.3.3.1", "id": "SPDXRef-Package-rpm-libselinux1-a2b465e774acecae", "purl": "pkg:rpm/sles/libselinux1@3.5-150600.3.3.1?arch=x86_64&distro=sles-15.7&upstream=libselinux-3.5-150600.3.3.1.src.rpm", "license": "LicenseRef-SUSE-Public-Domain", "dependencies": 2, "dependents": 2, "repo_url": "https://github.com/SELinuxProject/selinux", "anitya_url": "https://release-monitoring.org/project/1717/", "score": 0.30840901143959826, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 219.2202927331105], ["months_since_last_commit", 1.0, 0.1315589890995513], ["contributor_count(window_months=12)", 1.0, 39.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 45.6892539356605], ["months_since_last_release", 1.0, 4.529856298896874], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-libstdc--6-3ef20feb930c0b4a": {"name": "libstdc++6", "version": "16.2.0+git9497-150000.1.3.3", "id": "SPDXRef-Package-rpm-libstdc--6-3ef20feb930c0b4a", "purl": "pkg:rpm/sles/libstdc%2B%2B6@16.2.0%2Bgit9497-150000.1.3.3?arch=x86_64&distro=sles-15.7&upstream=gcc16-16.2.0%2Bgit9497-150000.1.3.3.src.rpm", "license": "GPL-3.0-or-later WITH GCC-exception-3.1", "dependencies": 2, "dependents": 1, "repo_url": null, "anitya_url": null, "score": 0.1290511997688379, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-libz1-074741f14a70e3f6": {"name": "libz1", "version": "1.2.13-150500.4.6.1", "id": "SPDXRef-Package-rpm-libz1-074741f14a70e3f6", "purl": "pkg:rpm/sles/libz1@1.2.13-150500.4.6.1?arch=x86_64&distro=sles-15.7&upstream=zlib-1.2.13-150500.4.6.1.src.rpm", "license": "Zlib", "dependencies": 1, "dependents": 4, "repo_url": "https://github.com/madler/zlib", "anitya_url": "https://release-monitoring.org/project/5303/", "score": 0.2875265650244463, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 196.36386877978973], ["months_since_last_commit", 1.0, 0.3742262214202601], ["contributor_count(window_months=12)", 1.0, 38.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 24.91444216290212], ["months_since_last_release", 1.0, 0.37291698014715946], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 4.0]]}, "SPDXRef-Package-rpm-libzstd1-e8859682aadc57d3": {"name": "libzstd1", "version": "1.5.7-150700.1.2", "id": "SPDXRef-Package-rpm-libzstd1-e8859682aadc57d3", "purl": "pkg:rpm/sles/libzstd1@1.5.7-150700.1.2?arch=x86_64&distro=sles-15.7&upstream=zstd-1.5.7-150700.1.2.src.rpm", "license": "BSD-3-Clause AND GPL-2.0-only", "dependencies": 1, "dependents": 2, "repo_url": "https://github.com/facebook/zstd", "anitya_url": "https://release-monitoring.org/project/12083/", "score": 0.35959980814959447, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 141.7507656373652], ["months_since_last_commit", 1.0, 0.043823284334550155], ["contributor_count(window_months=12)", 1.0, 31.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 12.572210814510608], ["months_since_last_release", 1.0, 20.854219327665984], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-rpm-perl-base-f36443de2ede5fde": {"name": "perl-base", "version": "5.26.1-150300.17.23.1", "id": "SPDXRef-Package-rpm-perl-base-f36443de2ede5fde", "purl": "pkg:rpm/sles/perl-base@5.26.1-150300.17.23.1?arch=x86_64&distro=sles-15.7&upstream=perl-5.26.1-150300.17.23.1.src.rpm", "license": "LicenseRef-Artistic-1.0-or-GPL-2.0-", "dependencies": 2, "dependents": 1, "repo_url": "https://github.com/Perl/perl5", "anitya_url": "https://release-monitoring.org/project/13599/", "score": 0.212726695270101, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 5.0], ["months_since_first_commit", 1.0, 466.97583099294474], ["months_since_last_commit", 1.0, 0.021636757641645753], ["contributor_count(window_months=12)", 1.0, 70.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 160.29568788501027], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-rpm-config-SUSE-216c8934a79ab555": {"name": "rpm-config-SUSE", "version": "1-150400.14.3.1", "id": "SPDXRef-Package-rpm-rpm-config-SUSE-216c8934a79ab555", "purl": "pkg:rpm/sles/rpm-config-SUSE@1-150400.14.3.1?arch=noarch&distro=sles-15.7&upstream=rpm-config-SUSE-1-150400.14.3.1.src.rpm", "license": "GPL-2.0-or-later", "dependencies": 3, "dependents": 1, "repo_url": null, "anitya_url": null, "score": 0.15218939348530783, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 3.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-rpm-ndb-938c87195cd1de13": {"name": "rpm-ndb", "version": "4.14.3-150400.59.19.1", "id": "SPDXRef-Package-rpm-rpm-ndb-938c87195cd1de13", "purl": "pkg:rpm/sles/rpm-ndb@4.14.3-150400.59.19.1?arch=x86_64&distro=sles-15.7&upstream=rpm-ndb-4.14.3-150400.59.19.1.src.rpm", "license": "GPL-2.0-or-later", "dependencies": 19, "dependents": 1, "repo_url": null, "anitya_url": null, "score": 0.2816360631201457, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 19.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-skelcd-EULA-bci-13a6425c62cd4c80": {"name": "skelcd-EULA-bci", "version": "20250430-150700.1.1", "id": "SPDXRef-Package-rpm-skelcd-EULA-bci-13a6425c62cd4c80", "purl": "pkg:rpm/sles/skelcd-EULA-bci@20250430-150700.1.1?arch=x86_64&distro=sles-15.7&upstream=skelcd-bci-20250430-150700.1.1.src.rpm", "license": "GPL-2.0-only", "dependencies": 0, "dependents": 0, "repo_url": null, "anitya_url": null, "score": 0.0, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 0.0], ["dependents_count(transitive=False)", 1.0, 0.0]]}, "SPDXRef-Package-rpm-sles-release-198f69eb6e419d1e": {"name": "sles-release", "version": "15.7-150700.67.6.1", "id": "SPDXRef-Package-rpm-sles-release-198f69eb6e419d1e", "purl": "pkg:rpm/sles/sles-release@15.7-150700.67.6.1?arch=x86_64&distro=sles-15.7&upstream=sles-release-15.7-150700.67.6.1.src.rpm", "license": "MIT", "dependencies": 2, "dependents": 0, "repo_url": null, "anitya_url": null, "score": 0.08836109854832123, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 0.0]]}, "SPDXRef-Package-rpm-system-user-root-b3d183699d21482c": {"name": "system-user-root", "version": "20190513-3.3.1", "id": "SPDXRef-Package-rpm-system-user-root-b3d183699d21482c", "purl": "pkg:rpm/sles/system-user-root@20190513-3.3.1?arch=noarch&distro=sles-15.7&upstream=system-user-root-20190513-3.3.1.src.rpm", "license": "MIT", "dependencies": 0, "dependents": 1, "repo_url": null, "anitya_url": null, "score": 0.04069010122051666, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 0.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-rpm-terminfo-base-c83cdc8fd1457bee": {"name": "terminfo-base", "version": "6.1-150000.5.33.1", "id": "SPDXRef-Package-rpm-terminfo-base-c83cdc8fd1457bee", "purl": "pkg:rpm/sles/terminfo-base@6.1-150000.5.33.1?arch=x86_64&distro=sles-15.7&upstream=ncurses-6.1-150000.5.33.1.src.rpm", "license": "MIT", "dependencies": 1, "dependents": 1, "repo_url": null, "anitya_url": "https://release-monitoring.org/project/373226/", "score": 0.09643974735291225, "coverage": 0.25, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, null], ["months_since_last_commit", 1.0, null], ["contributor_count(window_months=12)", 1.0, null], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, null], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}}]]></script>
+<script><![CDATA[
+const dependencies = JSON.parse(document.getElementById("dependencies").textContent);
+const stats = JSON.parse(document.getElementById("stats").textContent);
+const XHTML = "http://www.w3.org/1999/xhtml";
+
+const dependents = {};
+for (const id in dependencies) {
+  dependents[id] ??= [];
+  for (const dep of dependencies[id]) {
+    (dependents[dep] ??= []).push(id);
+  }
+}
+
+const elements = {};
+for (const el of document.querySelectorAll("[data-package]")) {
+  (elements[el.dataset.package] ??= []).push(el);
+}
+
+const nameLabel = document.getElementById("hover-name");
+const panelBox = document.getElementById("stats-panel");
+const panel = panelBox.querySelector(".panel");
+const svg = panelBox.ownerSVGElement;
+
+function reach(edges, start) {
+  const seen = new Set();
+  const stack = [...(edges[start] ?? [])];
+  while (stack.length > 0) {
+    const id = stack.pop();
+    if (seen.has(id)) {
+      continue;
+    }
+    seen.add(id);
+    stack.push(...(edges[id] ?? []));
+  }
+  seen.delete(start);
+  return seen;
+}
+
+function mark(id, cls) {
+  for (const el of elements[id] ?? []) {
+    el.classList.add(cls);
+  }
+}
+
+function unmark(id, cls) {
+  for (const el of elements[id] ?? []) {
+    el.classList.remove(cls);
+  }
+}
+
+let selected = null;
+let hovered = null;
+
+function showName() {
+  const id = hovered ?? selected;
+  if (id === null) {
+    nameLabel.textContent = "";
+    return;
+  }
+  const score = stats[id]?.score;
+  const name = stats[id]?.name ?? id;
+  nameLabel.textContent = typeof score === "number" ? `${name} (${score.toFixed(3)})` : name;
+}
+
+function hover(id) {
+  if (id === hovered) {
+    return;
+  }
+  if (hovered !== null) {
+    unmark(hovered, "hovered");
+  }
+  hovered = id;
+  if (hovered !== null) {
+    mark(hovered, "hovered");
+  }
+  showName();
+}
+
+function select(id) {
+  for (const els of Object.values(elements)) {
+    for (const el of els) {
+      el.classList.remove("selected", "dependency", "dependent", "both");
+    }
+  }
+  selected = id === selected ? null : id;
+  svg.classList.toggle("locked", selected !== null);
+  showName();
+  if (selected === null) {
+    panel.hidden = true;
+    return;
+  }
+  const below = reach(dependencies, selected);
+  const above = reach(dependents, selected);
+  mark(selected, "selected");
+  for (const id of below) {
+    mark(id, above.has(id) ? "both" : "dependency");
+  }
+  for (const id of above) {
+    if (!below.has(id)) {
+      mark(id, "dependent");
+    }
+  }
+  showPanel(selected, below.size, above.size);
+}
+
+function create(tag, cls, text) {
+  const el = document.createElementNS(XHTML, tag);
+  if (cls) {
+    el.className = cls;
+  }
+  if (text !== undefined) {
+    el.textContent = text;
+  }
+  return el;
+}
+
+function format(value) {
+  if (value === null || value === undefined || value === "") {
+    return "N/A";
+  }
+  if (typeof value === "number") {
+    return Number.isInteger(value) ? String(value) : value.toPrecision(4);
+  }
+  return String(value);
+}
+
+function link(url) {
+  if (typeof url !== "string" || !url.startsWith("https://")) {
+    return create("span", null, format(url));
+  }
+  const a = create("a", null, url);
+  a.href = url;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  return a;
+}
+
+function row(table, label, value) {
+  const tr = create("tr");
+  tr.append(create("td", null, label));
+  const td = create("td");
+  td.append(value instanceof Node ? value : document.createTextNode(format(value)));
+  tr.append(td);
+  table.append(tr);
+}
+
+function showPanel(id, transitiveDependencies, transitiveDependents) {
+  const s = stats[id] ?? {};
+  const header = create("div", "panel-header");
+  header.append(create("span", "panel-title", s.name ?? id));
+  const collapse = create("button", null, panel.classList.contains("collapsed") ? "+" : "–");
+  collapse.title = "Collapse";
+  collapse.addEventListener("click", () => {
+    const collapsed = panel.classList.toggle("collapsed");
+    collapse.textContent = collapsed ? "+" : "–";
+    movePanel(panelBox.x.baseVal.value, panelBox.y.baseVal.value);
+  });
+  const close = create("button", null, "×");
+  close.title = "Close and unlock";
+  close.addEventListener("click", () => select(selected));
+  header.append(collapse, close);
+
+  const body = create("div", "panel-body");
+  const table = create("table");
+  row(table, "Name", s.name);
+  row(table, "Version", s.version);
+  row(table, "ID", s.id ?? id);
+  row(table, "PURL", s.purl);
+  row(table, "License", s.license);
+  row(table, "Dependencies", `${format(s.dependencies)} direct, ${transitiveDependencies} transitive`);
+  row(table, "Dependents", `${format(s.dependents)} direct, ${transitiveDependents} transitive`);
+  row(table, "Repository", link(s.repo_url));
+  row(table, "Anitya", link(s.anitya_url));
+  row(table, "Score", s.score);
+  row(table, "Signal coverage", typeof s.coverage === "number" ? `${Math.round(s.coverage * 100)}%` : null);
+  body.append(table);
+  if ((s.signals ?? []).length > 0) {
+    body.append(create("div", "panel-section", "Signals"));
+    const signals = create("table", "signals");
+    for (const [name, weight, value] of s.signals) {
+      row(signals, `${name} (weight ${format(weight)})`, value);
+    }
+    body.append(signals);
+  }
+  panel.replaceChildren(header, body);
+  panel.hidden = false;
+  movePanel(panelBox.x.baseVal.value, panelBox.y.baseVal.value);
+}
+
+function toViewBox(event) {
+  return new DOMPoint(event.clientX, event.clientY).matrixTransform(svg.getScreenCTM().inverse());
+}
+
+function movePanel(x, y) {
+  const view = svg.viewBox.baseVal;
+  const right = view.x + view.width - panel.offsetWidth;
+  const bottom = view.y + view.height - panel.offsetHeight;
+  panelBox.x.baseVal.value = Math.max(view.x, Math.min(x, right));
+  panelBox.y.baseVal.value = Math.max(view.y, Math.min(y, bottom));
+}
+
+let drag = null;
+
+panel.addEventListener("pointerdown", (event) => {
+  if (event.button !== 0 || !event.target.closest(".panel-header") || event.target.closest("button")) {
+    return;
+  }
+  const start = toViewBox(event);
+  drag = { dx: panelBox.x.baseVal.value - start.x, dy: panelBox.y.baseVal.value - start.y };
+  panel.setPointerCapture(event.pointerId);
+  panel.classList.add("dragging");
+  event.preventDefault();
+});
+
+panel.addEventListener("pointermove", (event) => {
+  if (drag !== null) {
+    const point = toViewBox(event);
+    movePanel(point.x + drag.dx, point.y + drag.dy);
+  }
+});
+
+for (const type of ["pointerup", "pointercancel"]) {
+  panel.addEventListener(type, () => {
+    drag = null;
+    panel.classList.remove("dragging");
+  });
+}
+
+document.addEventListener("pointerover", (event) => {
+  const el = event.target.closest?.("[data-package]");
+  hover(el ? el.dataset.package : null);
+});
+
+document.documentElement.addEventListener("pointerleave", () => hover(null));
+
+document.documentElement.addEventListener("click", (event) => {
+  if (event.target.closest?.(".panel")) {
+    return;
+  }
+  const el = event.target.closest?.("[data-package]");
+  select(el === null || el === undefined ? null : el.dataset.package);
+});
+]]></script>
+</svg>

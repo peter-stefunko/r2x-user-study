@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 900" preserveAspectRatio="xMidYMid meet" style="--tint-dependency: #2F6FDB; --tint-dependent: #F28E2B; --tint-both: #8E44AD; --locked-fill: #E1E1E1; --locked-label: #000000">
+<style><![CDATA[
+text,
+line,
+rect.tint,
+foreignObject {
+  pointer-events: none;
+}
+
+rect[data-package] {
+  cursor: pointer;
+}
+
+rect.tint {
+  fill: transparent;
+}
+
+svg.locked rect.fill:not(.selected) {
+  fill: var(--locked-fill);
+}
+
+svg.locked text.label:not(.selected) {
+  fill: var(--locked-label);
+}
+
+rect.tint.hovered {
+  fill: #000000;
+  fill-opacity: 0.15;
+}
+
+rect.tint.dependency {
+  fill: var(--tint-dependency);
+  fill-opacity: 0.55;
+}
+
+rect.tint.dependent {
+  fill: var(--tint-dependent);
+  fill-opacity: 0.55;
+}
+
+rect.tint.both {
+  fill: var(--tint-both);
+  fill-opacity: 0.55;
+}
+
+rect.tint.hovered.dependency,
+rect.tint.hovered.dependent,
+rect.tint.hovered.both {
+  fill-opacity: 0.75;
+}
+
+rect.selected {
+  stroke-width: 4px;
+}
+
+#hover-name {
+  fill: #111111;
+}
+
+.panel {
+  pointer-events: auto;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #555555;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  color: #111111;
+  font: 13px monospace;
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px 4px 10px;
+  background: rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid #aaaaaa;
+  cursor: move;
+  user-select: none;
+}
+
+.panel.dragging {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.panel.collapsed .panel-header {
+  border-bottom: none;
+}
+
+.panel-title {
+  flex: 1;
+  overflow: hidden;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel button {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid #888888;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  font: inherit;
+}
+
+.panel-body {
+  max-height: 760px;
+  overflow: auto;
+  padding: 6px 10px 8px;
+}
+
+.panel.collapsed .panel-body {
+  display: none;
+}
+
+.panel table {
+  border-collapse: collapse;
+}
+
+.panel td {
+  padding: 1px 6px 1px 0;
+  vertical-align: top;
+  word-break: break-all;
+}
+
+.panel td:first-child {
+  color: #555555;
+  white-space: nowrap;
+  word-break: normal;
+}
+
+.panel table.signals td:first-child {
+  white-space: normal;
+  word-break: break-word;
+}
+
+.panel table.signals td:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.panel-section {
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.panel a {
+  color: #1a5fb4;
+}
+]]></style>
+<rect width="1900" height="900" fill="#FFFFFF"/>
+<rect class="fill" data-package="SPDXRef-Package-p1" x="333.57" y="458.16" width="62.87" height="109.52" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p1" x="333.57" y="458.16" width="62.87" height="109.52" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p1" x="365.01" y="512.92" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p1</text>
+<rect class="fill" data-package="SPDXRef-Package-p10" x="891.76" y="587.95" width="48.67" height="97.35" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p10" x="891.76" y="587.95" width="48.67" height="97.35" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p10" x="916.10" y="636.63" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p10</text>
+<rect class="fill" data-package="SPDXRef-Package-p11" x="269.08" y="458.16" width="54.76" height="109.52" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p11" x="269.08" y="458.16" width="54.76" height="109.52" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p11" x="296.46" y="512.92" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p11</text>
+<rect class="fill" data-package="SPDXRef-Package-p12" x="333.37" y="342.15" width="418.52" height="101.40" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p12" x="333.37" y="342.15" width="418.52" height="101.40" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p12" x="542.63" y="392.86" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p12</text>
+<rect class="fill" data-package="SPDXRef-Package-p13" x="1359.02" y="399.82" width="135.44" height="285.49" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p13" x="1359.02" y="399.82" width="135.44" height="285.49" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p13" x="1426.74" y="542.56" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p13</text>
+<rect class="fill" data-package="SPDXRef-Package-p14" x="369.87" y="567.68" width="58.81" height="117.63" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p14" x="369.87" y="567.68" width="58.81" height="117.63" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p14" x="399.28" y="626.49" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p14</text>
+<rect class="fill" data-package="SPDXRef-Package-p15" x="1135.12" y="240.75" width="29.20" height="444.55" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p15" x="1135.12" y="240.75" width="29.20" height="444.55" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p15" x="1149.72" y="463.03" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p15</text>
+<rect class="fill" data-package="SPDXRef-Package-p16" x="825.23" y="571.74" width="56.79" height="113.57" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p16" x="825.23" y="571.74" width="56.79" height="113.57" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p16" x="853.62" y="628.53" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p16</text>
+<rect class="fill" data-package="SPDXRef-Package-p17" x="1359.02" y="139.35" width="280.62" height="260.47" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p17" x="1359.02" y="139.35" width="280.62" height="260.47" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p17" x="1499.33" y="269.58" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p17</text>
+<rect class="fill" data-package="SPDXRef-Package-p18" x="333.37" y="244.81" width="418.52" height="97.35" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p18" x="333.37" y="244.81" width="418.52" height="97.35" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p18" x="542.63" y="293.48" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p18</text>
+<rect class="fill" data-package="SPDXRef-Package-p19" x="500.89" y="458.16" width="52.73" height="227.14" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p19" x="500.89" y="458.16" width="52.73" height="227.14" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p19" x="527.25" y="571.73" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p19</text>
+<rect class="fill" data-package="SPDXRef-Package-p2" x="1147.78" y="42.00" width="491.86" height="97.35" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p2" x="1147.78" y="42.00" width="491.86" height="97.35" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p2" x="1393.71" y="90.67" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p2</text>
+<rect class="fill" data-package="SPDXRef-Package-p20" x="1147.78" y="139.35" width="50.70" height="101.40" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p20" x="1147.78" y="139.35" width="50.70" height="101.40" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p20" x="1173.13" y="190.05" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p20</text>
+<rect class="fill" data-package="SPDXRef-Package-p21" x="897.43" y="168.55" width="240.61" height="72.20" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p21" x="897.43" y="168.55" width="240.61" height="72.20" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p21" x="1017.74" y="204.65" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p21</text>
+<rect class="fill" data-package="SPDXRef-Package-p22" x="737.29" y="458.16" width="29.20" height="227.14" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p22" x="737.29" y="458.16" width="29.20" height="227.14" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p22" x="751.89" y="571.73" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p22</text>
+<rect class="fill" data-package="SPDXRef-Package-p23" x="1504.20" y="399.82" width="135.44" height="285.49" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p23" x="1504.20" y="399.82" width="135.44" height="285.49" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p23" x="1571.92" y="542.56" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p23</text>
+<rect class="fill" data-package="SPDXRef-Package-p24" x="301.32" y="685.30" width="1338.32" height="194.70" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p24" x="301.32" y="685.30" width="1338.32" height="194.70" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p24" x="970.48" y="782.65" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p24</text>
+<rect class="fill" data-package="SPDXRef-Package-p25" x="301.32" y="567.68" width="58.81" height="117.63" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p25" x="301.32" y="567.68" width="58.81" height="117.63" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p25" x="330.73" y="626.49" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p25</text>
+<rect class="fill" data-package="SPDXRef-Package-p3" x="897.41" y="347.12" width="30.67" height="125.94" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p3" x="897.41" y="347.12" width="30.67" height="125.94" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p3" x="912.75" y="410.09" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p3</text>
+<rect class="fill" data-package="SPDXRef-Package-p4" x="260.36" y="346.21" width="48.67" height="111.95" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p4" x="260.36" y="346.21" width="48.67" height="111.95" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p4" x="284.69" y="402.19" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p4</text>
+<rect class="fill" data-package="SPDXRef-Package-p5" x="438.42" y="458.16" width="52.73" height="227.14" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p5" x="438.42" y="458.16" width="52.73" height="227.14" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p5" x="464.79" y="571.73" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p5</text>
+<rect class="fill" data-package="SPDXRef-Package-p6" x="897.43" y="473.06" width="30.63" height="114.89" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p6" x="897.43" y="473.06" width="30.63" height="114.89" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p6" x="912.75" y="530.51" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p6</text>
+<rect class="fill" data-package="SPDXRef-Package-p7" x="625.82" y="458.16" width="52.73" height="227.14" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p7" x="625.82" y="458.16" width="52.73" height="227.14" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p7" x="652.18" y="571.73" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p7</text>
+<rect class="fill" data-package="SPDXRef-Package-p8" x="563.35" y="458.16" width="52.73" height="227.14" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p8" x="563.35" y="458.16" width="52.73" height="227.14" stroke="#000000" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p8" x="589.72" y="571.73" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p8</text>
+<rect class="fill" data-package="SPDXRef-Package-p9" x="897.43" y="240.75" width="30.63" height="106.37" fill="#E1E1E1"/>
+<rect class="tint" data-package="SPDXRef-Package-p9" x="897.43" y="240.75" width="30.63" height="106.37" stroke="#000000" stroke-width="1.5" stroke-dasharray="7.88 3.00" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<text class="label" data-package="SPDXRef-Package-p9" x="912.75" y="293.94" font-family="monospace" font-size="10.00" fill="#000000" text-anchor="middle" dominant-baseline="middle">p9</text>
+<polygon points="333.37,443.56 751.89,443.56 766.49,458.16 318.77,458.16" fill="#000000" pointer-events="none"/>
+<text id="hover-name" x="950.00" y="4.00" font-family="monospace" font-size="18.0" text-anchor="middle" dominant-baseline="hanging"></text>
+<foreignObject id="stats-panel" x="20" y="20" width="560.0" height="860"><div xmlns="http://www.w3.org/1999/xhtml" class="panel" hidden="hidden"></div></foreignObject>
+<script type="application/json" id="dependencies"><![CDATA[{"SPDXRef-Package-p1": ["SPDXRef-Package-p25", "SPDXRef-Package-p14"], "SPDXRef-Package-p10": ["SPDXRef-Package-p24"], "SPDXRef-Package-p11": ["SPDXRef-Package-p25"], "SPDXRef-Package-p12": ["SPDXRef-Package-p11", "SPDXRef-Package-p1", "SPDXRef-Package-p22", "SPDXRef-Package-p7", "SPDXRef-Package-p5", "SPDXRef-Package-p19", "SPDXRef-Package-p8"], "SPDXRef-Package-p13": ["SPDXRef-Package-p24"], "SPDXRef-Package-p14": ["SPDXRef-Package-p24"], "SPDXRef-Package-p15": ["SPDXRef-Package-p24"], "SPDXRef-Package-p16": ["SPDXRef-Package-p24"], "SPDXRef-Package-p17": ["SPDXRef-Package-p23", "SPDXRef-Package-p13"], "SPDXRef-Package-p18": ["SPDXRef-Package-p12"], "SPDXRef-Package-p19": ["SPDXRef-Package-p24"], "SPDXRef-Package-p2": ["SPDXRef-Package-p20", "SPDXRef-Package-p17"], "SPDXRef-Package-p20": ["SPDXRef-Package-p15"], "SPDXRef-Package-p21": ["SPDXRef-Package-p9", "SPDXRef-Package-p15"], "SPDXRef-Package-p22": ["SPDXRef-Package-p24"], "SPDXRef-Package-p23": ["SPDXRef-Package-p24"], "SPDXRef-Package-p24": [], "SPDXRef-Package-p25": ["SPDXRef-Package-p24"], "SPDXRef-Package-p3": ["SPDXRef-Package-p6"], "SPDXRef-Package-p4": ["SPDXRef-Package-p11"], "SPDXRef-Package-p5": ["SPDXRef-Package-p24"], "SPDXRef-Package-p6": ["SPDXRef-Package-p10"], "SPDXRef-Package-p7": ["SPDXRef-Package-p24"], "SPDXRef-Package-p8": ["SPDXRef-Package-p24"], "SPDXRef-Package-p9": ["SPDXRef-Package-p3"]}]]></script>
+<script type="application/json" id="stats"><![CDATA[{"SPDXRef-Package-p24": {"name": "p24", "version": "N/A", "id": "SPDXRef-Package-p24", "purl": "pkg:rpm/photon/glibc-libs@2.43-7.ph5?arch=x86_64&distro=photon-5.0&upstream=glibc-2.43-7.ph5.src.rpm", "license": null, "dependencies": 0, "dependents": 12, "repo_url": "https://sourceware.org/git/glibc.git", "anitya_url": "https://release-monitoring.org/project/5401/", "score": 0.19459024458534446, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 9.0], ["months_since_first_commit", 1.0, 451.0094637043825], ["months_since_last_commit", 1.0, 0.0640785039869952], ["contributor_count(window_months=12)", 1.0, 133.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 84.24914442162901], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 0.0], ["dependents_count(transitive=False)", 1.0, 12.0]]}, "SPDXRef-Package-p25": {"name": "p25", "version": "N/A", "id": "SPDXRef-Package-p25", "purl": "pkg:rpm/photon/zlib@1.3.2-1.ph5?arch=x86_64&distro=photon-5.0&upstream=zlib-1.3.2-1.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 2, "repo_url": "https://github.com/madler/zlib", "anitya_url": "https://release-monitoring.org/project/5303/", "score": 0.28002976386878103, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 196.36386877978973], ["months_since_last_commit", 1.0, 0.3742262214202601], ["contributor_count(window_months=12)", 1.0, 38.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 24.91444216290212], ["months_since_last_release", 1.0, 0.37291698014715946], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-p5": {"name": "p5", "version": "N/A", "id": "SPDXRef-Package-p5", "purl": "pkg:rpm/photon/xz-libs@5.4.0-6.ph5?arch=x86_64&distro=photon-5.0&upstream=xz-5.4.0-6.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/tukaani-project/xz", "anitya_url": "https://release-monitoring.org/project/5277/", "score": 0.34808185363962124, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 227.27337311303864], ["months_since_last_commit", 1.0, 0.25691406672332495], ["contributor_count(window_months=12)", 1.0, 12.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 14.795345653661874], ["months_since_last_release", 1.0, 2.2332398056426346], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p19": {"name": "p19", "version": "N/A", "id": "SPDXRef-Package-p19", "purl": "pkg:rpm/photon/bzip2-libs@1.0.8-8.ph5?arch=x86_64&distro=photon-5.0&upstream=bzip2-1.0.8-8.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://sourceware.org/git/bzip2.git", "anitya_url": "https://release-monitoring.org/project/237/", "score": 0.4371713564568912, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 351.30140234512663], ["months_since_last_commit", 1.0, 4.201345306568561], ["contributor_count(window_months=12)", 1.0, 3.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 0.7665982203969883], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p14": {"name": "p14", "version": "N/A", "id": "SPDXRef-Package-p14", "purl": "pkg:rpm/photon/zstd-libs@1.5.5-4.ph5?arch=x86_64&distro=photon-5.0&upstream=zstd-1.5.5-4.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/facebook/zstd", "anitya_url": "https://release-monitoring.org/project/12083/", "score": 0.3536492623084569, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 141.7507656373652], ["months_since_last_commit", 1.0, 0.043823284334550155], ["contributor_count(window_months=12)", 1.0, 31.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 12.572210814510608], ["months_since_last_release", 1.0, 20.854219327665984], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p22": {"name": "p22", "version": "N/A", "id": "SPDXRef-Package-p22", "purl": "pkg:rpm/photon/popt@1.16-7.ph5?arch=x86_64&distro=photon-5.0&upstream=popt-1.16-7.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/rpm-software-management/popt", "anitya_url": "https://release-monitoring.org/project/3689/", "score": 0.4687930502669944, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 357.96508797566923], ["months_since_last_commit", 1.0, 0.1563614565423226], ["contributor_count(window_months=12)", 1.0, 5.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 0.7665982203969883], ["months_since_last_release", 1.0, 50.013405413289604], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p7": {"name": "p7", "version": "N/A", "id": "SPDXRef-Package-p7", "purl": "pkg:rpm/photon/lua-libs@5.4.6-3.ph5?arch=x86_64&distro=photon-5.0&upstream=lua-5.4.6-3.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/lua/lua", "anitya_url": "https://release-monitoring.org/project/1847/", "score": 0.3990871354218195, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 399.6394326996266], ["months_since_last_commit", 1.0, 0.3237794180082135], ["contributor_count(window_months=12)", 1.0, 2.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 4.906228610540725], ["months_since_last_release", 1.0, 3.8069033739105635], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p10": {"name": "p10", "version": "N/A", "id": "SPDXRef-Package-p10", "purl": "pkg:rpm/photon/libxcrypt@4.5.2-2.ph5?arch=x86_64&distro=photon-5.0&upstream=libxcrypt-4.5.2-2.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/besser82/libxcrypt", "anitya_url": "https://release-monitoring.org/project/16436/", "score": 0.4432396425903066, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, null], ["months_since_first_commit", 1.0, 138.1792299677679], ["months_since_last_commit", 1.0, 11.204434926319871], ["contributor_count(window_months=12)", 1.0, 2.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 0.15331964407939766], ["months_since_last_release", 1.0, 12.183980408990799], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p8": {"name": "p8", "version": "N/A", "id": "SPDXRef-Package-p8", "purl": "pkg:rpm/photon/expat-libs@2.8.1-1.ph5?arch=x86_64&distro=photon-5.0&upstream=expat-2.8.1-1.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/libexpat/libexpat", "anitya_url": "https://release-monitoring.org/project/770/", "score": 0.2816634627930231, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 348.39718687463267], ["months_since_last_commit", 1.0, 0.09644841543425356], ["contributor_count(window_months=12)", 1.0, 47.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 55.578370978781656], ["months_since_last_release", 1.0, 0.4667117166609628], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p15": {"name": "p15", "version": "N/A", "id": "SPDXRef-Package-p15", "purl": "pkg:rpm/redhat/libattr@2.6.0-1.el9_8?arch=x86_64&distro=rhel-9.8&upstream=attr-2.6.0-1.el9_8.src.rpm", "license": null, "dependencies": 1, "dependents": 2, "repo_url": "https://git.savannah.nongnu.org/git/attr.git", "anitya_url": "https://release-monitoring.org/project/137/", "score": 0.4811516771823269, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 310.0274036643292], ["months_since_last_commit", 1.0, 4.621775099419348], ["contributor_count(window_months=12)", 1.0, 1.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 1.839835728952772], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-p23": {"name": "p23", "version": "N/A", "id": "SPDXRef-Package-p23", "purl": "pkg:rpm/redhat/pcre2@10.40-7.el9_8?arch=x86_64&distro=rhel-9.8&upstream=pcre2-10.40-7.el9_8.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/PCRE2Project/pcre2", "anitya_url": "https://release-monitoring.org/project/5832/", "score": 0.2905236595678911, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 152.9077332006449], ["months_since_last_commit", 1.0, 0.028570526677313864], ["contributor_count(window_months=12)", 1.0, 31.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 19.394934976043803], ["months_since_last_release", 1.0, 1.611494194085482], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p13": {"name": "p13", "version": "N/A", "id": "SPDXRef-Package-p13", "purl": "pkg:rpm/redhat/pcre2-syntax@10.40-7.el9_8?arch=noarch&distro=rhel-9.8&upstream=pcre2-10.40-7.el9_8.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://github.com/PCRE2Project/pcre2", "anitya_url": "https://release-monitoring.org/project/5832/", "score": 0.2905236595678911, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 152.9077332006449], ["months_since_last_commit", 1.0, 0.028570526677313864], ["contributor_count(window_months=12)", 1.0, 31.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 19.394934976043803], ["months_since_last_release", 1.0, 1.611494194085482], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p20": {"name": "p20", "version": "N/A", "id": "SPDXRef-Package-p20", "purl": "pkg:rpm/redhat/libacl@2.4.0-1.el9_8?arch=x86_64&distro=rhel-9.8&upstream=acl-2.4.0-1.el9_8.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://git.savannah.nongnu.org/git/acl.git", "anitya_url": "https://release-monitoring.org/project/16/", "score": 0.4282389883507563, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 310.01700205006006], ["months_since_last_commit", 1.0, 1.4699022706091718], ["contributor_count(window_months=12)", 1.0, 3.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 3.6030116358658453], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p17": {"name": "p17", "version": "N/A", "id": "SPDXRef-Package-p17", "purl": "pkg:rpm/redhat/libselinux@3.6-3.el9?arch=x86_64&distro=rhel-9.8&upstream=libselinux-3.6-3.el9.src.rpm", "license": null, "dependencies": 2, "dependents": 1, "repo_url": "https://github.com/SELinuxProject/selinux", "anitya_url": "https://release-monitoring.org/project/1717/", "score": 0.3024584655984607, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 219.2202927331105], ["months_since_last_commit", 1.0, 0.1315589890995513], ["contributor_count(window_months=12)", 1.0, 39.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 45.6892539356605], ["months_since_last_release", 1.0, 4.529856298896874], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p11": {"name": "p11", "version": "N/A", "id": "SPDXRef-Package-p11", "purl": "pkg:rpm/photon/openssl-libs@3.5.9-0.1.ph5?arch=x86_64&distro=photon-5.0&upstream=openssl-3.5.9-0.1.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 2, "repo_url": "https://github.com/openssl/openssl", "anitya_url": "https://release-monitoring.org/project/2566/", "score": 0.1290586330539158, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 14.0], ["months_since_first_commit", 1.0, 334.8542465442566], ["months_since_last_commit", 1.0, 0.05978650927294851], ["contributor_count(window_months=12)", 1.0, 318.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 223.77002053388088], ["months_since_last_release", 1.0, 0.7907460832010039], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 2.0]]}, "SPDXRef-Package-p1": {"name": "p1", "version": "N/A", "id": "SPDXRef-Package-p1", "purl": "pkg:rpm/photon/elfutils-libelf@0.189-11.ph5?arch=x86_64&distro=photon-5.0&upstream=elfutils-0.189-11.ph5.src.rpm", "license": null, "dependencies": 2, "dependents": 1, "repo_url": "https://sourceware.org/git/elfutils.git", "anitya_url": "https://release-monitoring.org/project/5679/", "score": 0.3146608398450374, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 255.71646072158035], ["months_since_last_commit", 1.0, 0.1170854839196897], ["contributor_count(window_months=12)", 1.0, 34.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 18.475017111567418], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p6": {"name": "p6", "version": "N/A", "id": "SPDXRef-Package-p6", "purl": "pkg:rpm/photon/readline@8.3-1.ph5?arch=x86_64&distro=photon-5.0&upstream=readline-8.3-1.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://git.savannah.gnu.org/git/readline.git", "anitya_url": "https://release-monitoring.org/project/4173/", "score": 0.4708725661718736, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 179.76488401165716], ["months_since_last_commit", 1.0, 2.036118706310746], ["contributor_count(window_months=12)", 1.0, 1.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 0.38329911019849416], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p3": {"name": "p3", "version": "N/A", "id": "SPDXRef-Package-p3", "purl": "pkg:rpm/sles/bash@4.4-150400.27.6.1?arch=x86_64&distro=sles-15.7&upstream=bash-4.4-150400.27.6.1.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://git.savannah.gnu.org/git/bash.git", "anitya_url": "https://release-monitoring.org/project/166/", "score": 0.46031942057981373, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 362.67148426362195], ["months_since_last_commit", 1.0, 2.035005824196897], ["contributor_count(window_months=12)", 1.0, 1.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 1.30321697467488], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p9": {"name": "p9", "version": "N/A", "id": "SPDXRef-Package-p9", "purl": "pkg:rpm/photon/bash-bin@5.3-1.ph5?arch=x86_64&distro=photon-5.0&upstream=bash-5.3-1.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 1, "repo_url": "https://git.savannah.gnu.org/git/bash.git", "anitya_url": "https://release-monitoring.org/project/166/", "score": 0.46031942057981373, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 362.67148426362195], ["months_since_last_commit", 1.0, 2.035005824196897], ["contributor_count(window_months=12)", 1.0, 1.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 1.30321697467488], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p2": {"name": "p2", "version": "N/A", "id": "SPDXRef-Package-p2", "purl": "pkg:rpm/redhat/coreutils-single@8.32-41.el9_8.1?arch=x86_64&distro=rhel-9.8&upstream=coreutils-8.32-41.el9_8.1.src.rpm", "license": null, "dependencies": 2, "dependents": 0, "repo_url": "https://git.savannah.gnu.org/git/coreutils.git", "anitya_url": "https://release-monitoring.org/project/343/", "score": 0.2681186117918071, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 408.49990640372613], ["months_since_last_commit", 1.0, 0.029874842390676098], ["contributor_count(window_months=12)", 1.0, 36.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 88.61875427789185], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 0.0]]}, "SPDXRef-Package-p4": {"name": "p4", "version": "N/A", "id": "SPDXRef-Package-p4", "purl": "pkg:rpm/photon/krb5@1.20.2-15.ph5?arch=x86_64&distro=photon-5.0&upstream=krb5-1.20.2-15.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 0, "repo_url": "https://github.com/krb5/krb5", "anitya_url": "https://release-monitoring.org/project/13287/", "score": 0.3143363644812464, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 468.80249768123775], ["months_since_last_commit", 1.0, 0.19214480269183967], ["contributor_count(window_months=12)", 1.0, 26.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 8.739219712525667], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 0.0]]}, "SPDXRef-Package-p12": {"name": "p12", "version": "N/A", "id": "SPDXRef-Package-p12", "purl": "pkg:rpm/photon/rpm-libs@6.1.0-3.ph5?arch=x86_64&distro=photon-5.0&upstream=rpm-6.1.0-3.ph5.src.rpm", "license": null, "dependencies": 7, "dependents": 1, "repo_url": "https://github.com/rpm-software-management/rpm", "anitya_url": "https://release-monitoring.org/project/15204/", "score": 0.33910161588851667, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 2.0], ["months_since_first_commit", 1.0, 371.63502347533233], ["months_since_last_commit", 1.0, 0.4354607709441783], ["contributor_count(window_months=12)", 1.0, 30.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 18.168377823408623], ["months_since_last_release", 1.0, 2.896108712919994], ["dependencies_count(transitive=False)", 1.0, 7.0], ["dependents_count(transitive=False)", 1.0, 1.0]]}, "SPDXRef-Package-p18": {"name": "p18", "version": "N/A", "id": "SPDXRef-Package-p18", "purl": "pkg:rpm/photon/libsolv@0.7.39-2.ph5?arch=x86_64&distro=photon-5.0&upstream=libsolv-0.7.39-2.ph5.src.rpm", "license": null, "dependencies": 1, "dependents": 0, "repo_url": "https://github.com/openSUSE/libsolv", "anitya_url": "https://release-monitoring.org/project/7908/", "score": 0.3686538046246917, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 229.48834400232184], ["months_since_last_commit", 1.0, 0.7864495616799757], ["contributor_count(window_months=12)", 1.0, 17.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 7.665982203969883], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 0.0]]}, "SPDXRef-Package-p21": {"name": "p21", "version": "N/A", "id": "SPDXRef-Package-p21", "purl": "pkg:rpm/sles/perl-base@5.26.1-150300.17.23.1?arch=x86_64&distro=sles-15.7&upstream=perl-5.26.1-150300.17.23.1.src.rpm", "license": null, "dependencies": 2, "dependents": 0, "repo_url": "https://github.com/Perl/perl5", "anitya_url": "https://release-monitoring.org/project/13599/", "score": 0.20110095206423909, "coverage": 0.875, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 5.0], ["months_since_first_commit", 1.0, 466.97583099294474], ["months_since_last_commit", 1.0, 0.021636757641645753], ["contributor_count(window_months=12)", 1.0, 70.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 160.29568788501027], ["months_since_last_release", 1.0, null], ["dependencies_count(transitive=False)", 1.0, 2.0], ["dependents_count(transitive=False)", 1.0, 0.0]]}, "SPDXRef-Package-p16": {"name": "p16", "version": "N/A", "id": "SPDXRef-Package-p16", "purl": "pkg:rpm/sles/libjitterentropy3@3.4.1-150000.1.12.1?arch=x86_64&distro=sles-15.7&upstream=jitterentropy-3.4.1-150000.1.12.1.src.rpm", "license": null, "dependencies": 1, "dependents": 0, "repo_url": "https://github.com/smuellerDD/jitterentropy-library", "anitya_url": "https://release-monitoring.org/project/29701/", "score": 0.36673234924826004, "coverage": 1.0, "signals": [["bus_factor(min_commits=5, share=0.6, window_months=12)", 1.0, 1.0], ["months_since_first_commit", 1.0, 113.95881562179558], ["months_since_last_commit", 1.0, 0.4607853533340939], ["contributor_count(window_months=12)", 1.0, 3.0], ["commit_frequency(frame_weeks=4, window_months=12)", 1.0, 36.10677618069815], ["months_since_last_release", 1.0, 6.441015914190813], ["dependencies_count(transitive=False)", 1.0, 1.0], ["dependents_count(transitive=False)", 1.0, 0.0]]}}]]></script>
+<script><![CDATA[
+const dependencies = JSON.parse(document.getElementById("dependencies").textContent);
+const stats = JSON.parse(document.getElementById("stats").textContent);
+const XHTML = "http://www.w3.org/1999/xhtml";
+
+const dependents = {};
+for (const id in dependencies) {
+  dependents[id] ??= [];
+  for (const dep of dependencies[id]) {
+    (dependents[dep] ??= []).push(id);
+  }
+}
+
+const elements = {};
+for (const el of document.querySelectorAll("[data-package]")) {
+  (elements[el.dataset.package] ??= []).push(el);
+}
+
+const nameLabel = document.getElementById("hover-name");
+const panelBox = document.getElementById("stats-panel");
+const panel = panelBox.querySelector(".panel");
+const svg = panelBox.ownerSVGElement;
+
+function reach(edges, start) {
+  const seen = new Set();
+  const stack = [...(edges[start] ?? [])];
+  while (stack.length > 0) {
+    const id = stack.pop();
+    if (seen.has(id)) {
+      continue;
+    }
+    seen.add(id);
+    stack.push(...(edges[id] ?? []));
+  }
+  seen.delete(start);
+  return seen;
+}
+
+function mark(id, cls) {
+  for (const el of elements[id] ?? []) {
+    el.classList.add(cls);
+  }
+}
+
+function unmark(id, cls) {
+  for (const el of elements[id] ?? []) {
+    el.classList.remove(cls);
+  }
+}
+
+let selected = null;
+let hovered = null;
+
+function showName() {
+  const id = hovered ?? selected;
+  if (id === null) {
+    nameLabel.textContent = "";
+    return;
+  }
+  const name = stats[id]?.name ?? id;
+  nameLabel.textContent = name;
+}
+
+function hover(id) {
+  if (id === hovered) {
+    return;
+  }
+  if (hovered !== null) {
+    unmark(hovered, "hovered");
+  }
+  hovered = id;
+  if (hovered !== null) {
+    mark(hovered, "hovered");
+  }
+  showName();
+}
+
+function select(id) {
+  for (const els of Object.values(elements)) {
+    for (const el of els) {
+      el.classList.remove("selected", "dependency", "dependent", "both");
+    }
+  }
+  selected = id === selected ? null : id;
+  svg.classList.toggle("locked", selected !== null);
+  showName();
+  if (selected === null) {
+    panel.hidden = true;
+    return;
+  }
+  const below = reach(dependencies, selected);
+  const above = reach(dependents, selected);
+  mark(selected, "selected");
+  for (const id of below) {
+    mark(id, above.has(id) ? "both" : "dependency");
+  }
+  for (const id of above) {
+    if (!below.has(id)) {
+      mark(id, "dependent");
+    }
+  }
+  showPanel(selected, below.size, above.size);
+}
+
+function create(tag, cls, text) {
+  const el = document.createElementNS(XHTML, tag);
+  if (cls) {
+    el.className = cls;
+  }
+  if (text !== undefined) {
+    el.textContent = text;
+  }
+  return el;
+}
+
+function format(value) {
+  if (value === null || value === undefined || value === "") {
+    return "N/A";
+  }
+  if (typeof value === "number") {
+    return Number.isInteger(value) ? String(value) : value.toPrecision(4);
+  }
+  return String(value);
+}
+
+function link(url) {
+  if (typeof url !== "string" || !url.startsWith("https://")) {
+    return create("span", null, format(url));
+  }
+  const a = create("a", null, url);
+  a.href = url;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  return a;
+}
+
+function row(table, label, value) {
+  const tr = create("tr");
+  tr.append(create("td", null, label));
+  const td = create("td");
+  td.append(value instanceof Node ? value : document.createTextNode(format(value)));
+  tr.append(td);
+  table.append(tr);
+}
+
+function showPanel(id, transitiveDependencies, transitiveDependents) {
+  const s = stats[id] ?? {};
+  const header = create("div", "panel-header");
+  header.append(create("span", "panel-title", s.name ?? id));
+  const collapse = create("button", null, panel.classList.contains("collapsed") ? "+" : "–");
+  collapse.title = "Collapse";
+  collapse.addEventListener("click", () => {
+    const collapsed = panel.classList.toggle("collapsed");
+    collapse.textContent = collapsed ? "+" : "–";
+    movePanel(panelBox.x.baseVal.value, panelBox.y.baseVal.value);
+  });
+  const close = create("button", null, "×");
+  close.title = "Close and unlock";
+  close.addEventListener("click", () => select(selected));
+  header.append(collapse, close);
+
+  const body = create("div", "panel-body");
+  const table = create("table");
+  row(table, "Name", s.name);
+  row(table, "Version", s.version);
+  row(table, "ID", s.id ?? id);
+  row(table, "PURL", "N/A");
+  row(table, "License", s.license);
+  row(table, "Dependencies", `${format(s.dependencies)} direct, ${transitiveDependencies} transitive`);
+  row(table, "Dependents", `${format(s.dependents)} direct, ${transitiveDependents} transitive`);
+  row(table, "Repository", "N/A");
+  row(table, "Anitya", "N/A");
+  row(table, "Score", "N/A");
+  row(table, "Signal coverage", typeof s.coverage === "number" ? `${Math.round(s.coverage * 100)}%` : null);
+  body.append(table);
+  if ((s.signals ?? []).length > 0) {
+    body.append(create("div", "panel-section", "Signals"));
+    const signals = create("table", "signals");
+    for (const [name, weight, value] of s.signals) {
+      row(signals, `${name} (weight ${format(weight)})`, value);
+    }
+    body.append(signals);
+  }
+  panel.replaceChildren(header, body);
+  panel.hidden = false;
+  movePanel(panelBox.x.baseVal.value, panelBox.y.baseVal.value);
+}
+
+function toViewBox(event) {
+  return new DOMPoint(event.clientX, event.clientY).matrixTransform(svg.getScreenCTM().inverse());
+}
+
+function movePanel(x, y) {
+  const view = svg.viewBox.baseVal;
+  const right = view.x + view.width - panel.offsetWidth;
+  const bottom = view.y + view.height - panel.offsetHeight;
+  panelBox.x.baseVal.value = Math.max(view.x, Math.min(x, right));
+  panelBox.y.baseVal.value = Math.max(view.y, Math.min(y, bottom));
+}
+
+let drag = null;
+
+panel.addEventListener("pointerdown", (event) => {
+  if (event.button !== 0 || !event.target.closest(".panel-header") || event.target.closest("button")) {
+    return;
+  }
+  const start = toViewBox(event);
+  drag = { dx: panelBox.x.baseVal.value - start.x, dy: panelBox.y.baseVal.value - start.y };
+  panel.setPointerCapture(event.pointerId);
+  panel.classList.add("dragging");
+  event.preventDefault();
+});
+
+panel.addEventListener("pointermove", (event) => {
+  if (drag !== null) {
+    const point = toViewBox(event);
+    movePanel(point.x + drag.dx, point.y + drag.dy);
+  }
+});
+
+for (const type of ["pointerup", "pointercancel"]) {
+  panel.addEventListener(type, () => {
+    drag = null;
+    panel.classList.remove("dragging");
+  });
+}
+
+document.addEventListener("pointerover", (event) => {
+  const el = event.target.closest?.("[data-package]");
+  hover(el ? el.dataset.package : null);
+});
+
+document.documentElement.addEventListener("pointerleave", () => hover(null));
+
+document.documentElement.addEventListener("click", (event) => {
+  if (event.target.closest?.(".panel")) {
+    return;
+  }
+  const el = event.target.closest?.("[data-package]");
+  select(el === null || el === undefined ? null : el.dataset.package);
+});
+]]></script>
+</svg>
